@@ -1,0 +1,44 @@
+## Canvas Graphs for WordPress ##
+
+This plugin allows you to easily create HTML canvas based graphs on your WordPress blog. It uses the simple [HTML5 Graph](http://chrisvalleskey.com/html5-graph/) script by [Chris Valleskey](http://chrisvalleskey.com/) with modifications by me to adjust the labels and allow the first data point to show properly.
+
+## Format ##
+
+    [graph argument="value" ...]CSV Data[/graph]
+    [graph id="example" background="#f9f8f7" width="446" height="200" grid="20,10" leftOffset="14" showshadow="true"]0,10,20,30,40,50,60,70[/graph]
+
+## Parameters ##
+
+**id**: Defines the `id` of the canvas element, such as `"graph"`.
+
+**showline**: Boolean value. Will show or hide the line on the graph.
+
+**lineWidth**: Decimal value. The width of the line if it is being show and greater than 0.
+
+**strokeStyle**: Hexadecimal color or rgba() value. This is the color and opacity of the line.
+
+**showfill**: Boolean value. Will show or hide the fill beneath the lines on the graph.
+
+**fillStyle**: Hexadecimal color or rgba() value. This is the color and opacity of the fill beneath the lines.
+
+**showdots**: Boolean value. Will show or hide the actual dots on the lines on the graph.
+
+**showgrid**: Boolean value. Will show or hide the grid.
+
+**grid**: [Decimal, Decimal] value. This sets the grids width and heigh for each unit.
+
+**gridcolor**: Hexadecimal color or rgba() value. This is the color and opacity of the grid lines.
+
+**background**: Hexadecimal color or rgba() value. This is the color and opacity of the background of the canvas.
+
+**showlabels**: Boolean value. Will show or hide the labels on the grid.
+
+**labelfilter**: String value. This is a string where `%label%` will be replaced with the actual label value, so something like `$%label%` might become `$40`.
+
+**range**: [Decimal, Decimal] value. This sets maximum and minimum range for data on the grids Y axis.
+
+**leftOffset**: Decimal value. This defines the starting offset from the left and is used to allow longer labels to show the first point clearly.
+
+**call**: This is a callback function that will return a single value when called for a live graph, such as `randomNumbers` where the function looks like `function randomNumbers(){return Math.floor(Math.random()*100) + 50;}`.
+
+**interval**: Integer value. This sets the interval between calls when using the `call` parameter.
