@@ -2,6 +2,8 @@
 
 This plugin allows you to easily create HTML canvas based graphs on your WordPress blog. It uses the simple [HTML5 Graph](http://chrisvalleskey.com/html5-graph/) script by [Chris Valleskey](http://chrisvalleskey.com/) with modifications by me to adjust the labels and allow the first data point to show properly.
 
+![Example Graph](https://github.com/MatthewCallis/Canvas-Graphs/blob/master/screenshot-1.png)
+
 ## Format ##
 
     [graph argument="value" ...]CSV Data[/graph]
